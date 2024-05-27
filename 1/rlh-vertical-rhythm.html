@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <style>
+    html {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      gap: 1rlh;
+      margin: 0;
+      padding: 1rlh;
+      background-image: linear-gradient(rgba(50, 50, 50, 0.2) 1px, transparent 1px);
+      background-size: 100% 1rlh;
+    }
+
+    h1, p {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 1rlh;
+      background-color: rgba(0, 0, 0, 0.1)
+    }
+
+    h1 {
+      grid-column: span 2;
+      line-height: 1rlh;
+    }
+
+    h1 + p {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+
+<h1>h1の見出しです。</h1>
+
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+
+</body>
+</html>
