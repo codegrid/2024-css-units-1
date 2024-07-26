@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <style>
+    .box {
+      container-name: box;
+      container-type: size;
+      resize: both;
+      overflow: scroll;
+      width: 200px;
+      height: 200px;
+    }
+
+    @container box (width >= 300px) {
+      .box p {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <p>テキストが入ります。</p>
+  <p>テキストが入ります。</p>
+  <p>テキストが入ります。</p>
+</div>
+
+</body>
+</html>

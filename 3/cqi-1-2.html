@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <style>
+    .Box {
+      container-name: parent;
+      container-type: size;
+      width: 300px;
+      height: 200px;
+      resize: both;
+      overflow: scroll;
+    }
+    .Box_Item1 {
+      margin-bottom: 10px;
+      padding-block: 20px;
+      width: 50%;
+      background-color: gold;
+    }
+    .Box_Item2 {
+      padding-block: 20px;
+      width: 25%;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+
+<div class="Box">
+  <div class="Box_Item1">
+    <div class="Box_Item2"></div>
+  </div>
+  <div class="Box_Item2"></div>
+</div>
+
+</body>
+</html>
