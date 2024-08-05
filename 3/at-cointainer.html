@@ -6,12 +6,14 @@
   <title>Demo</title>
   <style>
     .box {
+      box-sizing: border-box;
       container-name: box;
       container-type: size;
       resize: both;
       overflow: scroll;
       width: 200px;
       height: 200px;
+      border: 1px solid tomato;
     }
 
     @container box (width >= 300px) {
